@@ -7510,48 +7510,7 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
-<span class="c1"># Montamos la unidad de drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">'/content/drive'</span><span class="p">)</span>
-<span class="n">project_path</span> <span class="o">=</span> <span class="s1">'/content/drive/MyDrive/RNA_trabajo_2'</span>
-
-<span class="c1"># Chequeamos el directorio de trabajo</span>
-<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">project_path</span><span class="p">):</span>
-    <span class="c1"># Cambiamos el directorio de trabajo</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">project_path</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Directorio de trabajo cambiado a: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: La carpeta '</span><span class="si">{</span><span class="n">project_path</span><span class="si">}</span><span class="s2">' no existe en Google Drive después del montaje."</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Por favor, verifica la ruta y asegúrate de que la carpeta esté en tu Google Drive."</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-Directorio de trabajo cambiado a: /content/drive/MyDrive/RNA_trabajo_2
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
+<main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7560,7 +7519,7 @@ Directorio de trabajo cambiado a: /content/drive/MyDrive/RNA_trabajo_2
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <center>
 <h1 id="Curso:-Redes-Neuronales-Artificiales-y-Algoritmos-Bioinspirados"><strong>Curso: Redes Neuronales Artificiales y Algoritmos Bioinspirados</strong><a class="anchor-link" href="#Curso:-Redes-Neuronales-Artificiales-y-Algoritmos-Bioinspirados">¶</a></h1><hr/>
-<h2 id="***Semestre*:-2025---1**">***Semestre*: 2025 - 1**<a class="anchor-link" href="#***Semestre*:-2025---1**">¶</a></h2><hr/>
+<h2 id="Semestre:-2025---1"><em><strong>Semestre: 2025 - 1</strong></em><a class="anchor-link" href="#Semestre:-2025---1">¶</a></h2><hr/>
 <h2 id="Trabajo-%232:-Redes-Neuronales-Aplicadas-a-Datos-Tabulares"><em><strong>Trabajo #2: Redes Neuronales Aplicadas a Datos Tabulares</strong></em><a class="anchor-link" href="#Trabajo-%232:-Redes-Neuronales-Aplicadas-a-Datos-Tabulares">¶</a></h2><hr/>
 <h3 id="Equipo-%232:"><strong>Equipo #2</strong>:<a class="anchor-link" href="#Equipo-%232:">¶</a></h3><p>Carlos José Quijano Valencia
 <br/>
@@ -7576,8 +7535,10 @@ Stiven Julio Doval</p>
 <strong>Monitor:</strong> Andrés Mauricio Zapata Rincón</br></p>
 <br/>
 <p><strong>Universidad Nacional de Colombia, Sede Medellín</strong></p>
-<p><em><strong>Mayo 2 del 2025</strong></em></p>
+<p><em><strong>Junio 12 del 2025</strong></em></p>
 <p><strong>Enlace a repositorio GitHub:</strong> <a href="https://github.com/Straver00/RNA_2025-1">https://github.com/Straver00/RNA_2025-1</a></p>
+<p><strong>Enlace Notebook Preprocesamiento:</strong> <a href="https://colab.research.google.com/drive/1_tcjWV1vsKgS0-hYzu6FKs_UqTkYx035?usp=sharing">https://colab.research.google.com/drive/1_tcjWV1vsKgS0-hYzu6FKs_UqTkYx035?usp=sharing</a></p>
+<p><strong>Enlace Notebook Experimental de Modelos</strong> <a href="https://colab.research.google.com/drive/1P3ZvN-ow3tYFBMKE_h0_MqI-XkFv4d2a?usp=sharing">https://colab.research.google.com/drive/1P3ZvN-ow3tYFBMKE_h0_MqI-XkFv4d2a?usp=sharing</a></p>
 </center>
 </div>
 </div>
@@ -7590,59 +7551,24 @@ Stiven Julio Doval</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Tabla-de-contenidos">Tabla de contenidos<a class="anchor-link" href="#Tabla-de-contenidos">¶</a></h1><ol>
-<li><a href="#introducci%C3%B3n">Introducción</a></li>
-<li><a href="#delimitaci%C3%B3n-metodolog%C3%ADa">Delimitación y Metodología</a><ul>
-<li><a href="#sub2.1">sub2.1</a></li>
-<li><a href="#sub2.2">sub2.2</a><ul>
-<li><a href="#sub2.2.1">sub2.2.1</a></li>
-<li><a href="#sub2.2.2">sub2.2.2</a></li>
+<li><a href="#introduccion">Introducción</a></li>
+<li><a href="#delimitacion-y-metodologia">Delimitación y Metodología</a></li>
+<li><a href="#limpieza-de-datos">Limpieza de datos</a></li>
+<li><a href="#analisis-descriptivo-e-hipotesis">Análisis Descriptivo e Hipótesis</a></li>
+<li><a href="#Modelos">Modelos</a><ul>
+<li><a href="#definicion-de-metricas-claves">Definición de Métricas Claves</a></li>
+<li><a href="#tratamiento-del-desbalance">Tratamiento del Desbalance</a></li>
+<li><a href="#funcion-de-perdida">Función de Pérdida</a></li>
+<li><a href="#estrategia-de-entrenamiento">Estrategia de Entrenamiento</a></li>
+<li><a href="#perceptrones-simples-como-referencia">Perceptrones Simples como Referencia</a></li>
+<li><a href="#redes-neuronales-sencillas">Redes Neuronales Sencillas</a></li>
+<li><a href="#red-con-batch-normalization-y-dropout">Red con Batch Normalization y Dropout</a></li>
+<li><a href="#seleccion-del-umbral-de-corte-y-modelo">Selección del Umbral de Corte y Modelo</a></li>
+<li><a href="#scorecard-para-el-modelo-final">Scorecard para el Modelo Final</a></li>
 </ul>
 </li>
-<li><a href="#sub2.3">sub2.3</a><ul>
-<li><a href="#sub2.3.1">sub2.3.1</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#limpieza-datos">Limpieza de datos</a></li>
-<li><a href="#an%C3%A1lisis-hip%C3%B3tesis">Análisis Descriptivo e Hipótesis</a><ul>
-<li><a href="#sub4.1">sub4.1</a></li>
-<li><a href="#sub4.2">sun4.2</a></li>
-</ul>
-</li>
-<li><a href="#modelos">Modelos</a><ul>
-<li><a href="#m%C3%A9tricas">Definición de Métricas Claves</a></li>
-<li><a href="#desbalance">Tratamiento del Desbalance</a></li>
-<li><a href="#funci%C3%B3n-perdida">Función de Pérdida</a></li>
-<li><a href="#estrategia-entrenamiento">Estrategia de Entrenamiento</a></li>
-<li><a href="#perceptrones">Perceptrones Simples como Referencia</a><ul>
-<li><a href="#learning-rate-1">Learning Rate 0.001</a></li>
-<li><a href="#learning-rate-2">Learning Rate 0.01</a></li>
-<li><a href="comparaci%C3%B3n-perceptrones">Comparación Perceptrones</a></li>
-</ul>
-</li>
-<li><a href="#redes-neuronales">Redes Neuronales Sencillas</a><ul>
-<li><a href="#sin-dropout">Sin Dropout</a></li>
-<li><a href="#con-dropout">Con Dropout</a></li>
-<li><a href="#comparaci%C3%B3n-redes">Comparación Redes Sencillas</a></li>
-</ul>
-</li>
-<li><a href="#red-batch-dropout">Red con Batch Normalization y Dropout</a><ul>
-<li><a href="#m%C3%A9tricas-test">Métricas en test</a></li>
-</ul>
-</li>
-<li><a href="#umbral">Selección de umbral de corte</a><ul>
-<li><a href="#comparaci%C3%B3n">Comparación métricas tras el umbral</a></li>
-<li><a href="#matriz_confusi%C3%B3n">Matrices de confusión</a></li>
-<li><a href="#mejor-modelo">Discusión Mejor Modelo</a></li>
-</ul>
-</li>
-<li><a href="#caso-uso">Caso de uso del modelo</a></li>
-</ul>
-</li>
-<li><a href="#app-web">Aplicación web</a></li>
-<li><a href="#bibliograf%C3%ADa">Bibliografía</a></li>
-<li><a href="#reporte-de-contribuci%C3%B3n-individual">Reporte de Contribución Individual</a></li>
+<li><a href="#aplicacion-web">Aplicación web</a></li>
+<li><a href="#bibliografia">Bibliografía</a></li>
 </ol>
 </div>
 </div>
@@ -7654,7 +7580,9 @@ Stiven Julio Doval</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Introducci%C3%B3n">Introducción<a class="anchor-link" href="#Introducci%C3%B3n">¶</a></h1>
+<h1 id="introduccion">Introducción<a class="anchor-link" href="#introduccion">¶</a></h1><p>El presente trabajo se enfoca en el desarrollo y evaluación de modelos de redes neuronales artificiales aplicados a datos tabulares, con el objetivo de proporcionar una herramienta eficaz para la predicción y clasificación de datos en un contexto práctico.</p>
+<p>El propósito principal del trabajo es aplicar técnicas avanzadas de redes neuronales para resolver problemas reales de clasificación. En particular, nos hemos enfocado en la creación de un modelo predictivo que permita a los usuarios evaluar la viabilidad de obtener créditos, basado en características que son fácilmente accesibles por el individuo y que no requieren información confidencial proveniente de instituciones bancarias.</p>
+<p>A lo largo de este informe, se detallarán las metodologías empleadas en el preprocesamiento de los datos, la selección de modelos, así como los resultados obtenidos en las pruebas de clasificación. Además, se presentarán recomendaciones sobre las mejores prácticas y futuras mejoras en el campo de la inteligencia artificial aplicada a los datos tabulares.</p>
 </div>
 </div>
 </div>
@@ -7665,7 +7593,7 @@ Stiven Julio Doval</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Delimitaci%C3%B3n-y-Metodolog%C3%ADa">Delimitación y Metodología<a class="anchor-link" href="#Delimitaci%C3%B3n-y-Metodolog%C3%ADa">¶</a></h1><p>El objetivo de desarrollar el modelo se plantea en un contexto en cuál se debe desarrollar una app web para uso de personas. En ese sentido la delimitación inmediata que surge es que el app web debe tener un formulario, en el que la persona ingrese sus datos y así, conozca tanto su scorecard, como si puede o no acceder a crédito.
+<h1 id="delimitacion-y-metodologia">Delimitación y Metodología<a class="anchor-link" href="#Delimitacion-y-Metodologia">¶</a></h1><p>El objetivo de desarrollar el modelo se plantea en un contexto en cuál se debe desarrollar una app web para uso de personas. En ese sentido la delimitación inmediata que surge es que el app web debe tener un formulario, en el que la persona ingrese sus datos y así, conozca tanto su scorecard, como si puede o no acceder a crédito.
 Considerando eso, lo primero será entender que el modelo debe recibir información y variables que una persona si pueda proporcionar fácilmente desde su conocimiento, y sin necesidad de pedir información que sea condifencial de entidades bancarias o burós de crédito.
 Tras esa consideración, se entiende entonces que hay muchas variables que se podrán descarta.</p>
 <p>Así pues un flujo estrategico a seguir es:</p>
@@ -7677,6 +7605,7 @@ Tras esa consideración, se entiende entonces que hay muchas variables que se po
 <li>División de los datos en entrenamiento y prueba.</li>
 <li>Entrenamiento de diversos modelos con técnicas variadas.</li>
 <li>Selección del mejor modelo en base a métricas relacionadas con el problema de clasificación.</li>
+<li>Desarrollo de la app web con el scorecard de la persona según predicciones del modelo.</li>
 </ul>
 </div>
 </div>
@@ -7688,7 +7617,7 @@ Tras esa consideración, se entiende entonces que hay muchas variables que se po
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Limpieza-de-datos">Limpieza de datos<a class="anchor-link" href="#Limpieza-de-datos">¶</a></h1>
+<h1 id="limpieza-de-datos">Limpieza de datos<a class="anchor-link" href="#Limpieza-de-datos">¶</a></h1><p>Esta sección informa de manera detalla los pasos de limpieza y preprocesamiento de datos realizados en el conjunto de datos <strong>loan.csv</strong>. El objetivo principal de estos pasos es preparar los datos para un modelo de aprendizaje automático, asegurando la calidad de los datos, manejando los valores faltantes y transformando las variables a formatos adecuados.</p>
 </div>
 </div>
 </div>
@@ -7699,7 +7628,414 @@ Tras esa consideración, se entiende entonces que hay muchas variables que se po
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="An%C3%A1lisis-Descriptivo-e-Hip%C3%B3tesis">Análisis Descriptivo e Hipótesis<a class="anchor-link" href="#An%C3%A1lisis-Descriptivo-e-Hip%C3%B3tesis">¶</a></h1>
+<h2 id="Definicion-variable-objetivo">Definicion variable objetivo<a class="anchor-link" href="#Definicion-variable-objetivo">¶</a></h2><p>El proceso comienza cargando el conjunto de datos <strong>loan.csv</strong> en un DataFrame de pandas. La columna <strong>loan_status</strong>, que es la variable objetivo para este análisis, contiene varios valores de cadena que representan el estado del préstamo. Para crear un problema de clasificación binaria (por ejemplo, predecir el incumplimiento del préstamo), estos valores se mapean a <strong>0</strong> (Totalmente Pagado) o <strong>1</strong> (Castigado/Atrasado/Incumplido) y se quitan los registros en donde no se tenga certeza del comportamiento final del prestatario.</p>
+<p>Esto asegura que la variable objetivo sea estrictamente binaria y esté en un formato numérico, lo cual es un requisito para la mayoría de los algoritmos de aprendizaje automático.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Eliminaci%C3%B3n-de-variables">Eliminación de variables<a class="anchor-link" href="#Eliminaci%C3%B3n-de-variables">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variables-con-mas-de-la-mitad-de-datos-nulos">Variables con mas de la mitad de datos nulos<a class="anchor-link" href="#Variables-con-mas-de-la-mitad-de-datos-nulos">¶</a></h3><p>En este caso se identifican las 22 columnas principales con la mayor cantidad de datos faltantes y se eliminan.
+<strong>Justificación</strong>: Las columnas con un porcentaje muy alto de valores faltantes (por ejemplo, más del 50%) a menudo proporcionan poca información útil y pueden introducir ruido o sesgo en el modelo. Eliminarlas simplifica el conjunto de datos y mejora el rendimiento del modelo al eliminar características poco confiables.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variables-descriptivas,-textuales:">Variables descriptivas, textuales:<a class="anchor-link" href="#Variables-descriptivas,-textuales:">¶</a></h3><p>Estas variables son típicamente identificadores únicos, texto de formato libre o fechas que no son directamente utilizables como características numéricas para la predicción u ofrecen información redundante. Es poco probable que contribuyan significativamente a predecir el incumplimiento del préstamo, es por esto que no se toman en cuenta para predecir la variable objetivo.</p>
+<ul>
+<li><p><strong>id</strong>: Una identificación única asignada por LC para la lista de préstamos.</p>
+</li>
+<li><p><strong>member_id</strong>: Un ID único asignado por LC para el miembro prestatario.</p>
+</li>
+<li><p><strong>url</strong>: URL de la página LC con datos del listado.</p>
+</li>
+<li><p><strong>title</strong>: El título del préstamo proporcionado por el prestatario</p>
+</li>
+<li><p><strong>emp_title</strong>: El título del puesto de trabajo proporcionado por el prestatario al solicitar el préstamo.</p>
+</li>
+<li><p><strong>zip_code</strong>: Los primeros 3 números del código postal proporcionado por el prestatario en la solicitud de préstamo.</p>
+</li>
+<li><p><strong>issue_d</strong>: El mes en el que se financió el préstamo</p>
+</li>
+<li><p><strong>addr_state</strong>: El estado proporcionado por el prestatario en la solicitud de préstamo</p>
+</li>
+<li><p><strong>earliest_cr_line</strong>: El mes en que se abrió la primera línea de crédito informada del prestatario</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variables-post-solicitud:">Variables post solicitud:<a class="anchor-link" href="#Variables-post-solicitud:">¶</a></h3><p>Estas variables representan información después de que el préstamo ha sido financiado o los pagos han comenzado. Incluirlas introduciría una fuga de datos (data leakage), ya que sus valores no se conocerían en el momento de predecir el incumplimiento del préstamo. El objetivo es predecir el incumplimiento antes de que ocurran estos eventos</p>
+<ul>
+<li><strong>out_prncp</strong>: Capital pendiente restante por el monto total financiado</li>
+<li><strong>out_prncp_inv</strong>: Capital pendiente restante correspondiente a la parte del importe total financiado por los inversores</li>
+<li><strong>total_pymnt</strong>: Pagos recibidos hasta la fecha por el monto total financiado</li>
+<li><strong>total_pymnt_inv</strong>: Pagos recibidos hasta la fecha por una parte del importe total financiado por los inversores</li>
+<li><strong>total_rec_prncp</strong>: Principal recibido hasta la fecha</li>
+<li><strong>total_rec_int</strong>: Intereses recibidos hasta la fecha</li>
+<li><strong>total_rec_late_fee</strong>: Cargos por pagos atrasados recibidos hasta la fecha</li>
+<li><strong>recoveries</strong>: recuperación bruta posterior a la cancelación de la deuda</li>
+<li><strong>collection_recovery_fee</strong>: Tarifa de cobro por cancelación de publicación</li>
+<li><strong>last_pymnt_d</strong>: Se recibió el pago del mes pasado:</li>
+<li><strong>last_pymnt_amnt</strong>: Último importe total de pago recibido</li>
+<li><strong>last_credit_pull_d</strong>: El mes más reciente LC retiró el crédito para este préstamo</li>
+<li><strong>funded_amnt</strong>: El monto total comprometido para ese préstamo en ese momento.</li>
+<li><strong>funded_amnt_inv</strong>: El monto total comprometido por los inversores para ese préstamo en ese momento.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="variables-con-muy-poca-variabilidad:">variables con muy poca variabilidad:<a class="anchor-link" href="#variables-con-muy-poca-variabilidad:">¶</a></h3><p>Las variables con muy poca o ninguna varianza proporcionan información mínima o nula para un modelo predictivo. Si una variable tiene casi el mismo valor para todas las observaciones, no puede ayudar a diferenciar entre clases (por ejemplo, préstamos en incumplimiento versus préstamos no en incumplimiento).</p>
+<ul>
+<li><strong>pymnt_plan</strong>: Indica si se ha establecido un plan de pago para el préstamo.</li>
+<li><strong>policy_code</strong>: "publicly available policy_code=1. new products not publicly available policy_code=2"</li>
+<li><strong>application_type</strong>; Indica si el préstamo es una solicitud individual o una solicitud conjunta con dos co-prestatarios</li>
+<li><strong>acc_now_delinq</strong>: El número de cuentas en las que el prestatario se encuentra moroso actualmente.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variables-que-no-son-preguntables-al-usuario:">Variables que no son preguntables al usuario:<a class="anchor-link" href="#Variables-que-no-son-preguntables-al-usuario:">¶</a></h3><p>Este es un paso crucial para la aplicación práctica del modelo. Muchas de estas variables (por ejemplo, <strong>grade</strong>, <strong>sub_grade</strong>, <strong>int_rate</strong>, <strong>installment</strong>, <strong>dti</strong>, <strong>revol_util</strong>, ** tot_cur_bal** ) son asignaciones internas de LC, derivadas de informes de crédito, o son valores que el usuario promedio no conocería con precisión en el momento de solicitar un préstamo sin herramientas específicas o acceso a informes financieros detallados. El objetivo es construir un modelo que se base en la información disponible directamente a partir de la entrada del usuario, esto para funcionalidad e interaccion intuitiva de la pagina web del modelo.</p>
+<ul>
+<li><strong>grade</strong> y <strong>sub_grade</strong>: Grado y subgrado de préstamo asignado por LC.</li>
+<li><strong>delinq_2yrs</strong>: El número de incidencias de morosidad con más de 30 días de retraso en el historial crediticio del prestatario durante los últimos 2 años.</li>
+<li><strong>inq_last_6mths</strong>:El número de consultas en los últimos 6 meses (excluidas las consultas sobre automóviles e hipotecas)</li>
+<li><strong>open_acc</strong>: El número de líneas de crédito abiertas en el expediente crediticio del prestatario.</li>
+<li><strong>pub_rec</strong>:Número de registros públicos despectivos</li>
+<li><strong>int_rate</strong>: Tasa de interés del préstamo</li>
+<li><strong>installment</strong>: El pago mensual que debe el prestatario si se origina el préstamo.</li>
+<li><strong>dti</strong>: Una proporción calculada utilizando los pagos mensuales totales de la deuda del prestatario sobre las obligaciones totales de la deuda, excluida la hipoteca y el préstamo LC solicitado, dividido por el ingreso mensual declarado por el prestatario.</li>
+<li><strong>revol_bal</strong>: Saldo total del crédito rotatorio</li>
+<li><strong>revol_until</strong>: Tasa de utilización de la línea revolvente, o la cantidad de crédito que el prestatario está utilizando en relación con todo el crédito revolvente disponible.</li>
+<li><strong>total_acc</strong>: El número total de líneas de crédito actualmente en el expediente crediticio del prestatario</li>
+<li><strong>collections_12_mths_ex_med</strong>: Número de cobros en 12 meses excluyendo cobros médicos</li>
+<li><strong>tot_coll_amt</strong>: Montos totales de cobro alguna vez adeudados</li>
+<li><strong>total_rev_hi_lim</strong>: Crédito total rotatorio alto/límite de crédito</li>
+<li><strong>initial_list_status</strong>: Estado inicial de cotización del préstamo. Los valores posibles son: W, F</li>
+<li><strong>tot_cur_bal</strong>: Saldo corriente total de todas las cuentas, pues un usuario no suele conocer este dato con exactitud y requiere acceder a múltiples fuentes financiera, cosa que solo puede hacer un buró de crédito.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Codificacion-rapida-y-eleccion-de-variables-predictoras">Codificacion rapida y eleccion de variables predictoras<a class="anchor-link" href="#Codificacion-rapida-y-eleccion-de-variables-predictoras">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Codificaci%C3%B3n-r%C3%A1pida:">Codificación rápida:<a class="anchor-link" href="#Codificaci%C3%B3n-r%C3%A1pida:">¶</a></h3><p>Se preparan mejor estas variables por comodidad e interpretacion</p>
+<ul>
+<li><strong>verification_status</strong>:  Indica si los ingresos del prestatario fueron verificados.</li>
+</ul>
+<p>Se codifica esta variable como verificado :1 y no verificado: -1 para el entrenamiento apropiado del modelo</p>
+<ul>
+<li><strong>home_ownership</strong>: El estado de propiedad de la vivienda proporcionado por el prestatario durante el registro. Nuestros valores son:  RENT, OWN, MORTGAGE, OTHER.</li>
+</ul>
+<p>Se descartan las filas con NONE o ANY por que se considera como una respuesta no lógica o ambigua a la pregunta además de tener pocos de estos valores.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Posibles-variables-predictoras:">Posibles variables predictoras:<a class="anchor-link" href="#Posibles-variables-predictoras:">¶</a></h3><ul>
+<li><strong>loan_amnt</strong>: El monto del préstamo solicitado por el prestatario. (Si en algún momento el departamento de crédito reduce el monto del préstamo, esto se reflejará en este valor).</li>
+<li><strong>annual_inc</strong>: El ingreso anual declarado por el prestatario durante el registro.</li>
+<li><strong>emp_length</strong>: Duración del empleo en años. Los valores posibles están entre 0 y 10, donde 0 significa menos de un año y 10 significa diez o más años.</li>
+<li><strong>verification_status</strong>:  Indica si los ingresos del prestatario fueron verificados.</li>
+<li><strong>home_ownership</strong>: El estado de propiedad de la vivienda proporcionado por el prestatario durante el registro. Nuestros valores son:  RENT, OWN, MORTGAGE, OTHER.</li>
+<li><strong>purpose</strong>: Una categoría proporcionada por el prestatario para la solicitud de préstamo.(DIFICIL) (verificar relaciones)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Imputaci%C3%B3n-de-datos-faltantes">Imputación de datos faltantes<a class="anchor-link" href="#Imputaci%C3%B3n-de-datos-faltantes">¶</a></h2><p>Solo hacen falta datos en la columna <strong>'emp_length'</strong>, esta es categórica que indica la cantidad de años de que lleva empleada una persona, los valores nulos no los vamos ni a inputar ni eliminar en este caso, si no que crearemos un indicativo de ausencia de información, dando a entender que el usuario deliberadamente decidió no proporcionar la cantidad de años de empleo.Este enfoque reconoce que la ausencia de información en sí misma podría ser una señal significativa para el modelo, en lugar de asumir que es similar a otra categoría existente o simplemente descartar los datos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Codificacion-One-hot">Codificacion One-hot<a class="anchor-link" href="#Codificacion-One-hot">¶</a></h2><ul>
+<li><p>Se aplica la codificación One-Hot a las variables categoricas restantes, ya que convierte las variables categóricas a un formato booleano creando nuevas columnas para cada categoría. Por ejemplo, <strong>home_ownership</strong> con categorías 'RENT', 'OWN', 'MORTGAGE','OTHER' se transformaría en las columnas <strong>home_ownership_RENT</strong>,** home_ownership_OWN** y <strong>home_ownership_MORTGAGE</strong>, <strong>home_ownership_OTHER</strong> cada una conteniendo <strong>TRUE</strong> o <strong>FALSE</strong>.</p>
+</li>
+<li><p>Se elimina una columna redundante de cada conjunto de variables codificadas one-hot. Específicamente, se eliminan <strong>term_ 60 months</strong>, <strong>emp_length_n/a</strong>, <strong>purpose_other</strong> y <strong>home_ownership_OTHER</strong>. Esto se debe a que la información de una categoría es redundante si todas las demás son conocidas.  Por ejemplo, eliminar <strong>home_ownership_OTHER</strong> significa que si un prestatario no es 'MORTGAGE', 'OWN' o 'RENT', debe ser 'OTHER'.</p>
+</li>
+<li><p>Las columnas booleanas se identifican y se convierten a valores numéricos, mapeando <strong>True</strong> a 1 y <strong>False</strong> a -1. Esto asegura que las columnas booleanas, que podrían haberse creado durante la codificación one-hot o ya existían, también estén en un formato numérico adecuado para el entrenamiento del modelo.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Preparaci%C3%B3n-de-datos-para-el-modelo">Preparación de datos para el modelo<a class="anchor-link" href="#Preparaci%C3%B3n-de-datos-para-el-modelo">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Reordenar-y-renombrar-variables">Reordenar y renombrar variables<a class="anchor-link" href="#Reordenar-y-renombrar-variables">¶</a></h3><p>Restablecemos el índice para crear un índice limpio y secuencial y movemos la variable objetivo al final se realiza por buena práctica por razones de organización.</p>
+<p>Ahora vamos ahora a definir un diccionario para definir nombres más directos e intuibles para las columnas, renombrar las columnas mejora la legibilidad y la interpretabilidad del conjunto de datos, facilitando a los usuarios la comprensión del significado de cada característica y a la presentación de resultados.</p>
+<ul>
+<li><p>Monto préstamo</p>
+<ul>
+<li><strong>loan_amnt</strong>: 'monto'</li>
+</ul>
+</li>
+<li><p>Ingresos anuales reportados</p>
+<ul>
+<li><strong>annual_inc</strong>: ingreso_anual</li>
+</ul>
+</li>
+<li><p>¿Son sus ingresos verificables?</p>
+<ul>
+<li><strong>verification_status</strong>: ingreso_verificado</li>
+</ul>
+</li>
+<li><p>¿Pagará en 36 meses ó en más (60 meses la otra opción)?</p>
+<ul>
+<li><strong>term_ 36 months</strong>: pago_36_meses</li>
+<li><strong>term_ 60 months</strong>: pago_60_meses</li>
+</ul>
+</li>
+<li><p>Duración del empleo en años. Van desde menos de un año hasta 10 años o más, también (incluye en formulario los casos en los que no se da el dato)</p>
+<ul>
+<li><strong>emp_length_1 year</strong>:  emp_1_y</li>
+<li><strong>emp_length_10+ years</strong>: emp_+10y</li>
+<li><strong>emp_length_2 years</strong>:   emp_2_y</li>
+<li><strong>emp_length_3 years</strong>:   emp_3_y</li>
+<li><strong>emp_length_4 years</strong>:   emp_4_y</li>
+<li><strong>emp_length_5 years</strong>:   emp_5_y</li>
+<li><strong>emp_length_6 years</strong>:   emp_6_y</li>
+<li><strong>emp_length_7 years</strong>:   emp_7_y</li>
+<li><strong>emp_length_8 years</strong>:   emp_8_y</li>
+<li><strong>emp_length_9 years</strong>:   emp_9_y</li>
+<li><strong>emp_length_&lt; 1 year</strong>:  emp_0_y</li>
+<li><strong>emp_length_n/a</strong>: emp_n/a</li>
+</ul>
+</li>
+<li><p>Categorías de tipo propiedad casa</p>
+<ul>
+<li><strong>home_ownership_MORTGAGE</strong>: casa_hipotecada</li>
+<li><strong>home_ownership_OWN</strong>: casa_propia</li>
+<li><strong>home_ownership_RENT</strong>: casa_rentada</li>
+<li><strong>home_ownership_OTHER</strong>: casa_otra</li>
+</ul>
+</li>
+<li><p>Categorías próposito</p>
+<ul>
+<li><strong>purpose_car</strong>: prop_carro                                    # Carro</li>
+<li><strong>purpose_credit_card</strong>: prop_credito                          # Tarjeta de crédito</li>
+<li><strong>purpose_debt_consolidation</strong>: prop_consolidacion             # Consolidar débito</li>
+<li><strong>purpose_educational</strong>: prop_educativo                        # Educativo</li>
+<li><strong>purpose_home_improvement</strong>: prop_mejorar_casa                # Mejorar Casa</li>
+<li><strong>purpose_house</strong>: prop_comprar_casa                           # Comprar Casa</li>
+<li><strong>purpose_major_purchase</strong>: prop_compra_imp                    # Compra importante</li>
+<li><strong>purpose_medical</strong>: prop_salud                                # Salud</li>
+<li><strong>purpose_moving</strong>: prop_mover                                 # Mudanza</li>
+<li><strong>purpose_renewable_energy</strong>: prop_energia                     # Energía renovable</li>
+<li><strong>purpose_small_business</strong>: prop_micro                         # Microempresa</li>
+<li><strong>purpose_vacation</strong>: prop_vacaciones                          # Vacaciones</li>
+<li><strong>purpose_wedding</strong>: prop_boda                                 # Boda</li>
+<li><strong>purpose_other</strong>: prop_otro                                 # Otro</li>
+</ul>
+</li>
+<li><p>No pago del préstamo</p>
+<ul>
+<li><strong>loan_status</strong>: no_pago</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="analisis-descriptivo-e-hipotesis">Análisis Descriptivo e Hipótesis<a class="anchor-link" href="#Analisis-Descriptivo-e-Hipotesis">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El análisis del riesgo crediticio es una herramienta fundamental para las entidades financieras, ya que permite evaluar la probabilidad de que un solicitante de préstamo incumpla con sus obligaciones de pago. En este estudio se realiza un análisis descriptivo de una base de datos de préstamos, con el objetivo de identificar patrones y variables que influyen en el comportamiento de pago de los clientes.</p>
+<p>Se ha utilizado como variable objetivo loan_status, que distingue entre préstamos pagados e impagos. A partir de ella, se examinaron factores financieros y personales como la tasa de interés, el nivel de endeudamiento (dti), los ingresos anuales, y la calificación crediticia (grade), entre otros. Este enfoque permite obtener una visión general de los perfiles de mayor riesgo, proporcionando una base sólida para futuras decisiones de crédito y modelización predictiva.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Variable-objetivo-para-el-an%C3%A1lisis:-loan_status">Variable objetivo para el análisis: loan_status<a class="anchor-link" href="#Variable-objetivo-para-el-an%C3%A1lisis:-loan_status">¶</a></h2><ul>
+<li><p>Esta variable representa el estado del préstamo y es nuestro objetivo de análisis. Suele estar codificada como:</p>
+</li>
+<li><p>0 = préstamo pagado correctamente</p>
+</li>
+<li><p>1 = préstamo impagado o en mora</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="An%C3%A1lisis-de-las-variables-predictoras">Análisis de las variables predictoras<a class="anchor-link" href="#An%C3%A1lisis-de-las-variables-predictoras">¶</a></h2><h3 id="1.-loan_status">1. loan_status<a class="anchor-link" href="#1.-loan_status">¶</a></h3><ul>
+<li><p>Tipo: categórica binaria (0 = pagado, 1 = impago)</p>
+</li>
+<li><p>Uso: Es la variable principal del análisis.</p>
+</li>
+<li><p>Gráfico de barras para visualizar la distribución de préstamos pagados vs impagos.</p>
+</li>
+</ul>
+<p>¿Por qué se usa?
+Permite entender si hay un desbalance en la base de datos (por ejemplo, muchos más préstamos pagados que impagos), lo que es fundamental para diseñar modelos predictivos o estrategias de gestión de riesgo.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/loan_status.png"/>
+<i>Fig 1. Distribución del estado de prestamos(loan_status</i>
+</center>
+<h3 id="2.-int_rate-(Tasa-de-inter%C3%A9s)">2. int_rate (Tasa de interés)<a class="anchor-link" href="#2.-int_rate-(Tasa-de-inter%C3%A9s)">¶</a></h3><ul>
+<li><p>Tipo: numérica continua</p>
+</li>
+<li><p>Gráfico: Boxplot comparando la tasa de interés entre préstamos pagados e impagos.</p>
+</li>
+</ul>
+<p>¿Por qué se usa?
+La tasa de interés está directamente relacionada con el riesgo percibido por la entidad financiera. Normalmente, los préstamos con mayor riesgo se otorgan con tasas más altas. Analizar si los impagos tienden a tener mayores tasas permite validar si esta percepción se cumple en la práctica.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/Tasa_interes.png"/>
+<i>Fig 2. tasa de interes segun prestamo</i>
+</center>
+<h3 id="3.-dti-(Debt-to-Income-Ratio)">3. dti (Debt-to-Income Ratio)<a class="anchor-link" href="#3.-dti-(Debt-to-Income-Ratio)">¶</a></h3><ul>
+<li>Tipo: numérica continua</li>
+<li>Gráfico: Distribución de densidad (KDE) comparando los valores de DTI entre los dos estados de préstamo.</li>
+</ul>
+<p>¿Por qué se usa?
+El DTI mide qué proporción de los ingresos del solicitante está comprometida con deudas. Valores altos indican que el prestatario ya está financieramente comprometido, lo cual aumenta el riesgo de impago.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/Distribucion DTI.png"/>
+<i>Fig 3. Distribucion</i>
+</center>
+<h3 id="4.-grade-(Grado-de-cr%C3%A9dito-asignado-por-la-entidad)">4. grade (Grado de crédito asignado por la entidad)<a class="anchor-link" href="#4.-grade-(Grado-de-cr%C3%A9dito-asignado-por-la-entidad)">¶</a></h3><ul>
+<li>Tipo: categórica ordinal (de A a G, siendo A mejor y G peor)</li>
+<li>Gráfico: Barplot con el porcentaje de impagos por cada grado.</li>
+</ul>
+<p>¿Por qué se usa?
+El sistema de grados es una clasificación interna de riesgo. Este análisis nos permite verificar si realmente existe una correlación entre el grado otorgado y el comportamiento real de pago. Un aumento claro en el porcentaje de impagos a medida que el grado baja (de A a G) valida la calidad de esta evaluación interna.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/Grado_credito.png"/>
+<i>Fig 3.impagos por grado de creditos </i>
+</center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Conclusi%C3%B3n-de-esta-secci%C3%B3n">Conclusión de esta sección<a class="anchor-link" href="#Conclusi%C3%B3n-de-esta-secci%C3%B3n">¶</a></h2><p>El análisis descriptivo del riesgo crediticio ha permitido identificar varios factores clave asociados al impago de préstamos. Se observó que los solicitantes con tasa de interés más alta (int_rate), mayor nivel de endeudamiento (dti) y uso elevado del crédito rotativo (revol_util) presentaban tasas de impago significativamente superiores.</p>
+<p>Asimismo, el análisis por grado crediticio (grade) mostró un aumento progresivo del riesgo: los prestatarios con calificaciones más bajas (como F y G) alcanzaron porcentajes de impago superiores al 30%, en contraste con los grados A y B, que se mantuvieron por debajo del 10%. Esto confirma la validez del sistema interno de clasificación crediticia. Además, el propósito del préstamo también influyó en el riesgo: los préstamos destinados a consolidación de deudas y negocios pequeños concentraron los mayores niveles de impago.</p>
 </div>
 </div>
 </div>
@@ -7722,10 +8058,12 @@ Tras esa consideración, se entiende entonces que hay muchas variables que se po
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Definici%C3%B3n-de-M%C3%A9tricas-Claves">Definición de Métricas Claves<a class="anchor-link" href="#Definici%C3%B3n-de-M%C3%A9tricas-Claves">¶</a></h2><p>Este problema de clasificación binaria trata sobre predecir en base a la probabilidad de impago retornada por un modelo, si una persona que va solicitar crédito califica como pagador o no pagador. La variable objetivo se codificó como <strong>1 para un cliente que no pagó</strong>, por lo tanto lo ideal es tener una tasa de detección de verdaderos positivos muy alta (True Positive Rate), dicha métrica también se conoce como <em>Recall</em> o <em>Sensitivity</em>. Esta será la métrica clave ya que el dinero que se pierde por no prestarle a un cliente que no pagará, es mucho mayor que el que se pierde por no prestarle a un cliente que si pagará.</p>
-<p>\begin{equation}
-\text{Recall} = \frac{TP}{TP + FN}
-\end{equation}</p>
+<h2 id="definicion-de-metricas-claves">Definición de Métricas Claves<a class="anchor-link" href="#Definicion-de-Metricas-Claves">¶</a></h2><p>Este problema de clasificación binaria trata sobre predecir en base a la probabilidad de impago retornada por un modelo, si una persona que va solicitar crédito califica como pagador o no pagador. La variable objetivo se codificó como <strong>1 para un cliente que no pagó</strong>, por lo tanto lo ideal es tener una tasa de detección de verdaderos positivos muy alta (True Positive Rate), dicha métrica también se conoce como <em>Recall</em> o <em>Sensitivity</em>. Esta será la métrica clave ya que el dinero que se pierde por no prestarle a un cliente que no pagará, es mucho mayor que el que se pierde por no prestarle a un cliente que si pagará.</p>
+<p>La métrica <strong>Recall</strong> se define como:</p>
+<p>$$
+\text{Recall} = \frac{TP}{TP + FN} \quad (1)
+$$</p>
+<p>Como se muestra en la ecuación (1), el <strong>Recall</strong> mide la proporción de verdaderos positivos (TP) frente a los falsos negativos (FN).</p>
 <p>A parte de esto, también vamos a usar como métrica el <strong>AUC PR</strong> para comparar los modelos entre sí, para ver el mejor clasificador, esta es mejor que la <strong>AUC ROC</strong>, ya que el <strong>AUC PR</strong> determina el área bajo la curva entre el <strong>Precision</strong> y el <strong>Recall</strong> para diversos umbrales, dicha métrica se compara respecto a un <em>baseline</em> determinado por la proporción de muestras de la variable objetivo <strong>Y = 1</strong> (no pagadores), así pues es mucho mejor indicador en problemas desbalanceados.</p>
 <p>La escogencia entonces del modelo de despliegue estará sujeta a una comparativa de:</p>
 <ul>
@@ -7744,7 +8082,7 @@ Tras esa consideración, se entiende entonces que hay muchas variables que se po
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Tratamiento-del-Desbalance">Tratamiento del Desbalance<a class="anchor-link" href="#Tratamiento-del-Desbalance">¶</a></h2><p>Siendo un desbalance claro como se vió en la sección de análisis, con aproximadamente 78.09% de los datos siendo de la clase 0 (si pagó), y 21.90% para la clase 1 (no pagó); es necesario abordar técnicas para tratar este desbalance de clases.
+<h2 id="tratamiento-del-desbalance">Tratamiento del Desbalance<a class="anchor-link" href="#Tratamiento-del-Desbalance">¶</a></h2><p>Siendo un desbalance claro como se vió en la sección de análisis, con aproximadamente 78.09% de los datos siendo de la clase 0 (si pagó), y 21.90% para la clase 1 (no pagó); es necesario abordar técnicas para tratar este desbalance de clases.
 Aquí la estrategia elegida fue usar una técnica de ponderación de la función de pérdida, para indicarle a los modelos que presten atención a las muestras de la clase subrepresentada. Esta se implementó fácilmente con la función <code>class_weight</code> de la librería Scikit-Learn, la cuál por medio de las etiquetas, estudia su proporción y calcula los factores de ponderación para la función de pérdida.</p>
 </div>
 </div>
@@ -7756,14 +8094,14 @@ Aquí la estrategia elegida fue usar una técnica de ponderación de la función
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Funci%C3%B3n-de-P%C3%A9rdida">Función de Pérdida<a class="anchor-link" href="#Funci%C3%B3n-de-P%C3%A9rdida">¶</a></h2><p>Elegimos como función de pérdida la entropía binaria cruzada por su idoneidad natural para problemas de clasificación binaria cuando se combina con la activación sigmoide en la capa de salida. Esta función está fundamentada en principios de máxima verosimilitud, ya que modela la salida de la red como una distribución de Bernoulli, donde cada predicción representa la probabilidad de que una muestra pertenezca a la clase positiva. La BCE penaliza de manera asimétrica las predicciones incorrectas, siendo más severa con aquellas predicciones que muestran alta confianza pero son erróneas, lo cual es deseable desde el punto de vista del aprendizaje.
+<h2 id="funcion-de-perdida">Función de Pérdida<a class="anchor-link" href="#Funcion-de-Perdida">¶</a></h2><p>Elegimos como función de pérdida la entropía binaria cruzada por su idoneidad natural para problemas de clasificación binaria cuando se combina con la activación sigmoide en la capa de salida. Esta función está fundamentada en principios de máxima verosimilitud, ya que modela la salida de la red como una distribución de Bernoulli, donde cada predicción representa la probabilidad de que una muestra pertenezca a la clase positiva. La BCE penaliza de manera asimétrica las predicciones incorrectas, siendo más severa con aquellas predicciones que muestran alta confianza pero son erróneas, lo cual es deseable desde el punto de vista del aprendizaje.
 Además, la BCE presenta propiedades matemáticas óptimas para el entrenamiento de redes neuronales: es convexa cuando se usa con la activación sigmoide, garantizando la existencia de un mínimo global, y sus derivadas son suaves y bien comportadas, facilitando la convergencia del algoritmo de optimización. Su implementación es computacionalmente eficiente y numéricamente estable, evitando problemas comunes como el desvanecimiento del gradiente que pueden surgir con otras funciones de pérdida en este tipo de problemas.</p>
-<p>$$\text{BCE} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]$$</p>
+<p>$$\text{BCE} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right] \quad (2)$$</p>
 <p>Donde:</p>
 <ul>
 <li><p>$N$ es el número de muestras</p>
 </li>
-<li><p>$y_i$ es la etiqueta verdadera (0 o 1) para la muestra</p>
+<li><p>$y_i$ es la etiqueta verdadera (0 ó 1) para la muestra</p>
 </li>
 <li><p>$\hat{y}_i$ es la probabilidad predicha para la muestra</p>
 </li>
@@ -7778,14 +8116,15 @@ Además, la BCE presenta propiedades matemáticas óptimas para el entrenamiento
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Estrategia-de-Entrenamiento">Estrategia de Entrenamiento<a class="anchor-link" href="#Estrategia-de-Entrenamiento">¶</a></h2><p>Para el entrenamiento vamos a emplearon diversas estrategias variadas, unas se aplicaran a unos modelos y otras no. Entre todas estas posibles estrategias están:</p>
+<h2 id="estrategia-de-entrenamiento">Estrategia de Entrenamiento<a class="anchor-link" href="#Estrategia-de-Entrenamiento">¶</a></h2><p>Para el entrenamiento se emplearon diversas estrategias variadas, unas se aplicaron a unos modelos y otras no. Entre todas estas estrategias aplicadas a lo largo del testeo de modelos están:</p>
 <ul>
 <li>Diferentes learning rates.</li>
-<li>Implementar split de datos, para tener un subconjunto de validación, esto de forma aleatoria en cada época.</li>
-<li>Uso de Model CheckPoints para guardar mejores parámetros en una época según los resultados en el split de validación.</li>
-<li>Uso de Early Stoppings para detener el entrenamiento cuando según alguna métrica, el modelo no ha mejorado tras cierta cantidad de épocas.</li>
-<li>Capas de Dropout como estrategia de regularización y añadir ruido al entrenamiento para quizás mejorar el desempeño con datos con diferentes distribución y/o evitar el overfitting.</li>
-<li>Capas de Batch Normalization para estabilizar y acelerar el entrenamiento. Esto reduce el desplazamiento de covariables internas, lo que permite usar tasas de aprendizaje más altas y hace que el entrenamiento sea menos sensible a la inicialización de pesos.</li>
+<li><strong>Optimizador Adam</strong> porque cambia automáticamente de la tasa de aprendizaje por parámetro, eliminando la necesidad de ajuste manual extensivo.</li>
+<li>Implementar <strong>split de datos en el entrenamiento, para tener un subconjunto de validación</strong>, esto de forma aleatoria en cada época, para así <strong>cumplir con la condición de evaluar el modelo con múltiples conjuntos de datos</strong>.</li>
+<li>Uso de <strong>Model CheckPoints</strong> para guardar mejores parámetros en una época según los resultados en el split de validación.</li>
+<li>Uso de <strong>Early Stoppings</strong> para detener el entrenamiento cuando según alguna métrica, el modelo no ha mejorado tras cierta cantidad de épocas.</li>
+<li>Capas de <strong>Dropout</strong> como estrategia de regularización y añadir ruido al entrenamiento para quizás mejorar el desempeño con datos con diferentes distribución y/o evitar el overfitting.</li>
+<li>Capas de <strong>Batch Normalization</strong> para estabilizar y acelerar el entrenamiento. Esto reduce el desplazamiento de covariables internas, lo que permite usar tasas de aprendizaje más altas y hace que el entrenamiento sea menos sensible a la inicialización de pesos.</li>
 </ul>
 </div>
 </div>
@@ -7797,8 +8136,8 @@ Además, la BCE presenta propiedades matemáticas óptimas para el entrenamiento
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Perceptrones-Simples-como-Referencia">Perceptrones Simples como Referencia<a class="anchor-link" href="#Perceptrones-Simples-como-Referencia">¶</a></h2><p>Una buen práctica es siempre iniciar con modelos de baja complejidad para tener un referencia o pistas que permitan trazar un camino de hacia donde orientar el diseño de arquitectura.
-Para esto se van a entrenar 2 perceptrones con diferentes learning rate (uno con 0.001 y otro con 0.01), y ambos van usar Model CheckPoint para guardar los pesos de la época con el mejor <strong>Recall en el split de validación</strong>. Dando entonces lugar a 4 modelos diferentes de perceptrones simples.</p>
+<h2 id="perceptrones-simples-como-referencia">Perceptrones Simples como Referencia<a class="anchor-link" href="#Perceptrones-Simples-como-Referencia">¶</a></h2><p>Una buena práctica es siempre iniciar con modelos de baja complejidad para tener una referencia o pistas que permitan trazar un camino de hacia donde orientar el diseño de arquitectura.
+Para esto se van a entrenar 2 perceptrones con diferentes learning rate (uno con 0.001 y otro con 0.01), y ambos van usar Model CheckPoint para guardar los pesos de la época con el mejor <strong>Recall en el split de validación</strong>. Dando entonces en total 4 modelos diferentes de perceptrones simples.</p>
 <p>La arquitectura de todos es la misma, una capa de entrada que recibe las características escaladas y codificadas, con una única neurona de salida con función de activación sigmoide para obtener la probabilidad.</p>
 <p>Veamos entonces los resultados de estos modelos para el conjunto de prueba de los datos.</p>
 </div>
@@ -7811,7 +8150,10 @@ Para esto se van a entrenar 2 perceptrones con diferentes learning rate (uno con
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="Comparativa de métricas de perceptrones" src="MyDrive/RNA_trabajo_2/images_report/comparativa_metricas_perceptrones.png"/></p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/comparativa_metricas_perceptrones.png"/>
+<i>Fig. 4 Comparativa Métricas Perceptrones<i>
+</i></i></center>
 </div>
 </div>
 </div>
@@ -7822,11 +8164,28 @@ Para esto se van a entrenar 2 perceptrones con diferentes learning rate (uno con
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>.... Ahora veamos las curvas ROC de los modelos</p>
-<img alt="Fig 21. Curvas ROC Perceptrones" src="images_report/curvas_roc_perceptrones.png"/>
-<p>Pasamos ahora a ver las curvas PR (Precission - Recall) ya que estas son más apropidas para clasificadores con datos desbalanceados</p>
-<img alt="Fig 22. Curvas PR Perceptrones" src="images_report/curvas_pr_perceptrones.png"/>
-<p>Tras analizar los resultados de los 4 perceptrones, y considerar que métricas como <strong>AUC ROC</strong> y <strong>AUC PR</strong> indican en general que tan bueno es el clasificador (para todos los umbrales), la elección del perceptrón de referencia final, estará sujeta a eso, siendo entonces que los perceptrones tipo 2 (learning rate de 0.01), tienen mejor puntaje en este caso, por lo cual se seleccionará entre los de este tipo.
+<p>Vemos en general que los modelos con checkpoint tuvieron el mejor desempeño en cuanto a la métrica de recall, aunque no necesariamente fueron los mejores en accuracy, por lo cuál aquí se evidencia el trade-off entre estas 2 métricas en un problema desbalanceado. Ahora veamos las curvas ROC de los modelos</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/curvas_roc_perceptrones.png"/>
+<i>Fig. 5  Curvas ROC Perceptrones<i>
+</i></i></center>
+<p>Viendo esto incluyendo el AUC ROC podríamos pensar en inclinarnos por lo modelos de Perceptron Tipo 2 (learning rate de 0.01), pero en problemas desbalanceados donde el objetivo es detectar mejor la clase submuestreada, esta métrica no es la mejor.</p>
+<p>Pasamos ahora a ver las curvas PR (Precission - Recall) ya que estas son más apropidas para clasificadores con datos desbalanceados.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/curvas_pr_perceptrones.png"/>
+<i>Fig 6 Curvas PR Perceptrones<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Tras analizar los resultados de los 4 perceptrones, y considerar que métricas como <strong>AUC ROC</strong> y <strong>AUC PR</strong> indican en general que tan bueno es el clasificador (para todos los umbrales), la elección del perceptrón de referencia final, está sujeta a eso, siendo entonces que los perceptrones tipo 2 (learning rate de 0.01), tienen mejor puntaje en este caso, por lo cual se seleccionará entre los de este tipo.
 Ahora bien, entre estos 2, el perceptrón con parámetros guardados por checkpoint en la mejor época es el que tiene mejor <em>recall (true positive rate)</em>, la cual es la métrica clave. Por tal motivo:</p>
 <p><strong>Perceptrón seleccionado como modelo de referencia</strong>: Perceptrón 2 Checkpoint.</p>
 </div>
@@ -7839,27 +8198,403 @@ Ahora bien, entre estos 2, el perceptrón con parámetros guardados por checkpoi
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Redes-Neuronales-Sencillas">Redes Neuronales Sencillas<a class="anchor-link" href="#Redes-Neuronales-Sencillas">¶</a></h2><p>Aquí se plantearon arquitecturas más complejas con el ánimo de captar mejor el comportamientos de los datos de entrenamiento.</p>
-<p>La arquitectura es de 3 capas ocultas con función de activación <strong>LeakyReLU</strong> en cada neuronas, la razón de esta función de activación es para poder aprovechar los valores negativos en los datos de entrenamiento, cosa que nos perderiamos si se usará la conocida <strong>ReLU</strong>.</p>
-<p>Por otro lado la cantidad de neuronas por capa seguirán una estrategia de arquitectura piramidal, siguiendo un flujo de número de neuronas así:</p>
-<p>n_features $\rightarrow$ 2 $\cdot$ n_features $\rightarrow$ n_features $\rightarrow$ n_features/2 $\rightarrow$ 1</p>
+<h2 id="redes-neuronales-sencillas">Redes Neuronales Sencillas<a class="anchor-link" href="#Redes-Neuronales-Sencillas">¶</a></h2><p>Aquí se plantearon arquitecturas más complejas con el ánimo de captar mejor el comportamientos de los datos de entrenamiento.</p>
+<p>La arquitectura es de 3 capas ocultas con función de activación <strong>LeakyReLU</strong> en cada neurona, la razón de esta función de activación es para poder aprovechar los valores negativos en los datos de entrenamiento, cosa que nos perderiamos si se usará la conocida <strong>ReLU</strong>, ya que los valores negativos los convierte a 0, por lo que no contribuirán a la red en un proceso de actualización de pesos según el gradiente.</p>
+<p>Por otro lado la cantidad de neuronas por capa siguen una estrategia de arquitectura piramidal o "embudo", siguiendo un flujo de número de neuronas así:</p>
+<p><strong>n_features $\rightarrow$ 2 $\cdot$ n_features $\rightarrow$ n_features $\rightarrow$ n_features/2 $\rightarrow$ 1</strong></p>
 <p>Teniendo al final una función de activación sigmoide con una única neurona para obtener las probabilidades.</p>
 <p>Se plantearon 2 variaciones de esta arquitectura, una <strong>sin Dropout</strong> y la otra <strong>con capas de Dropout de 0.2</strong></p>
-<p>Además, aquí se repetirá de nuevo la estrategia de utilizar Model CheckPoints para guardar los parámetros de la red en la época</p>
+<p>Además, aquí se repite de nuevo la estrategia de utilizar Model CheckPoints para guardar los parámetros de la red en la época con <strong>mejor Recall en el split de validación</strong>, dando así de nuevo un total de 4 modelos, donde los denotados con la etique <em>Full</em> son aquellos con los pesos entrenados hasta la última época, mientras lo de <em>Checkpoint</em> son los pesos de la red que se han guardado en la mejor época.</p>
+<p>Veamos los resultados en las métricas de los 4 modelos.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/comparativa_metricas_redes.png"/>
+<i>Fig. 7 Comparativa Métricas Redes<i>
+</i></i></center>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Según estas primeras gráficas, el modelo de <em>Red 2 Checkpoint</em> pareciera una buena opción por tener el <strong>Recall</strong> más alto. Sin embargo en otras métricas como el <strong>Accuracy</strong> se queda mucho más pobre. Veamos gráficamente las curvas ROC y PR para terminar de elegir un modelo de red neuronal entre estos 4.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/curvas_roc_redes.png"/>
+<i>Fig. 8 Curvas ROC Redes<i>
+</i></i></center>
+<center>
+<img alt="No description has been provided for this image" src="images_report/curvas_pr_redes.png"/>
+<i>Fig. 9 Curvas PR Redes<i>
+</i></i></center>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Tras observar y tener mejor noción de los modelos en acompañamiento de las curvas de desempeño <strong>ROC y PR</strong>, se observa que el mejor desempeño lo tienen las redes neuronales tipo 1 (sin dropout), y en particular entre estas 2 redes tipo 1, empatan en estos scores <strong>AUC ROC</strong> y <strong>AUC PR</strong>; por lo que el desempate se determina según <strong>Recall</strong> con más peso, y <strong>Accuracy</strong> de forma secundaria. Por lo que el modelo elegido es:</p>
+<p><strong>Red Neuronal seleccionada como modelo de referencia</strong>: Red 1 Checkpoint (entrenada sin dropout).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="red-con-batch-normalization-y-dropout">Red con Batch Normalization y Dropout<a class="anchor-link" href="#Red-con-Batch-Normalization-y-Dropout">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Tras analizar los resultados de los anteriores modelos, se opta por entrenar otra red neuronal con la misma estrategia de <em># neuronas</em> por capa dando una forma de embudo, pero <strong>con Batch Normalization</strong> y <strong>con Dropout</strong>, s a la vez que se cambian las condiciones de entrenamiento de la siguiente forma:</p>
+<ul>
+<li><strong>Learning Rate</strong>: 0.01 $\rightarrow$ 0.001</li>
+<li><strong>Batch Size</strong>: 64 $\rightarrow$ 32</li>
+<li><strong>Monitoreo</strong>: Model Checkpoint $\rightarrow$ Early Stopping.</li>
+</ul>
+<p>La razón del Batch Normalization (BN) para datos tabulares es porque estabiliza el entrenamiento al mitigar el <em>Internal Covariate Shift</em>, problema donde la distribución de las activaciones de entrada a cada capa cambia constantemente durante el aprendizaje. Según Ioffe y Szegedy (2015), al normalizar estas activaciones dentro de cada mini-lote (haciendo que tengan una media cercana a cero y una varianza cercana a uno), BN acelera significativamente la convergencia al permitir tasas de aprendizaje más altas, mejora la estabilidad al reducir la probabilidad de gradientes evanescentes o explosivos, y actúa como un regularizador que ayuda a prevenir el sobreajuste</p>
+<p>En cuanto al Batch Size es hace más pequeño, lo cual aunque aumenta los tiempos de entrenamiento, permite actualizaciones de pesos con menor cantidad de datos, tendiendo un poco más que con 64 a lo que se llama aprendizaje online.</p>
+<p>Se establece un entrenamiento de 50 épocas, pero en lugar de usar un Model CheckPoint con el mejor Recall en validación, se usará un Early Stopping que tras 5 épocas sin mejorar la pérdida, detiene el entrenamiento y se queda con los mejores parámetros.</p>
+<p>Veamos entonces los resultados de este único modelo</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/metricas_red_batch.png"/>
+<i>Fig. 10 Comparativa Métricas Red BN + Dropout<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Ahora sus curvas ROC y PR:</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/curvas_red_batch.png"/>
+<i>Fig. 11 Curvas Red BN + Dropout<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Según los puntajes (AUC) ROC y PR, este modelo no lo hace mal, faltaría entonces intentar cambiar el umbral por defecto de 50% de probabilidad, a ver como cambian sus métricas en comparativa con el umbral para los demás modelos elegidos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="seleccion-del-umbral-de-corte-y-modelo">Selección del Umbral de Corte y Modelo<a class="anchor-link" href="#Seleccion-del-Umbral-de-Corte-y-Modelo">¶</a></h2><p>Ahora se toman los 3 modelos escogidos (Perceptrón, Red Neuronal, Red Neuronal + Batch Normalization) y se va llevar los 3 modelos al umbral en el que tengan un 80% de <strong>Recall</strong>, la cuál es la métrica clave. Una vez llevados al umbral en el que cada uno logra eso, compararemos con las demás métricas.</p>
+<p>La razón de este umbral de corte para obtener un <em>Recall</em> del 80% es para tener una cobertura del 80% (ampliamente mayoritaria) de las clases submuestreadas de tipo 1 (no pagadores de crédito). Esto se justifica entendiendo que conceder cŕedito a un mal pagador es mucho peor que no conceder crédito a un buen pagador, es un trade-off que se aplica al modelo para que sus predicciones sean más seguras alrededor del tema de financiación de cŕedito.</p>
+<p>Para esto entonces se toman los 3 modelos y se les aplica un procedimiento que busca de forma iterativa el mínimo umbral de probabilidad posible, tal que el modelo pueda obtener un 80% de <strong>Recall</strong> con los datos de test. Veamos los resultados obtenidos por este procedimiento:</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/tabla_umbrales.png"/>
+<i>Fig. 12 Umbrales Obtenidos por Modelo<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Vemos que para llegar a un Recall de 0.8 (80%), el modelo de red neuronal con batch normalization y dropout requirió bajar un poco más su umbral, esto en princpio podría sonar como si fuera el peor modelo, sin embargo es a tráves de las métricas que se puede dar un mejor veredicto. Observemos a continuación las nuevas métricas por modelo con los umbrales obtenidos:</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/metricas_umbrales.png"/>
+<i>Fig. 13 Comparativa Metricas con Umbrales Nuevos<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Se puede ver rápidamente que aunque el umbral más bajo parecia dar señal de que el modelo con batch normalization y dropout no era el mejor, vemos que en comparativa considerando la métrica de <em>Accuracy</em>, el modelo con BN +dropout es el mejor. Permite con un Recall de 80% en igualdad de condiciones con los otros 2 modelos, obtener mejores predicciones en general. Además para despejar cualquier duda, sus métricas de score ROC y PR son mayores, indicando que es no solo un mejor clasificador en general, sino que también es mejor clasificador para escenarios de desbalance.</p>
+<p>Apreciemos esto también por medio de las matrices de confusión para cada modelo.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/matriz_confusion_modelos.png"/>
+<i>Fig. 14 Matrices de Confusión<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Por medio de las matrices de confusión se puede apreciar mucho mejor la superioridad del modelo de redes neuronales con batch normalization y dropout, aunque todos los modelos castigan a muchos usuarios del conjunto de test como no pagadores del crédito cuando si son pagadores, el modelo mencionado lo hace en menor cantidad, de ahí que su superioridad en las otras métricas como <strong>Accuracy</strong> y <strong>Precisión</strong> sea mucho mejor que el modelo de perceptrón simple y de red neuronal sencilla.</p>
+<p><strong>Modelo Final Elegido</strong>: Red Neuronal con Batch Normalization y Dropout.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="scorecard-para-el-modelo-final">Scorecard para el Modelo Final<a class="anchor-link" href="#Scorecard-para-el-Modelo-Final">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Ahora bien, ya con un modelo formulado y un umbral optimizado para un <strong>Recall de 80%</strong>. Lo siguiente es llevar los resultados a una representación de score crediticio, para esto tomamos como referencia lo establecido por Thomas, Edelman y Crook (2002) en su publicación sobre scores de crédito. Estableciendo que la formulación para el cálculo de un scorecard sigue la siguiente ecuación.</p>
+<p>$$
+\text{Score} = \text{Offset} + \text{Factor} \cdot \ln\left( \frac{1 - p}{p} \right) \quad (3)
+$$</p>
+<p>La ecuación (3) está dada por:</p>
+<ul>
+<li><p>$p$ es la probabilidad estimada de incumplimiento (output del modelo)</p>
+</li>
+<li><p>$\text{Offset}$ y $\text{Factor}$ son parámetros de la fórmula que a su vez se calculan como:</p>
+<p>$$\text{Factor} = \frac{\text{PDO}}{\ln(2)}$$</p>
+<p>$$\text{Offset} = \text{Score}_0 - \text{Factor} \cdot \ln(\text{Odds}_0)$$</p>
+</li>
+</ul>
+<p>Estos otros nuevos parámetros internos, con su respectivo valor estándar establecido por Thomas, Edelman y Crook (2002) son:</p>
+<ul>
+<li>$\text{Odds}_0$: Cantidad de buenos pagadores que se esperan por un solo mal pagador. Establecido en la publicación como <strong>50</strong>.</li>
+<li>$\text{PDO}$: Cantidad de puntos que debe aumentar el score para que las odds (probabilidad de que pague sobre que no pague) se dupliquen. Usalmente con un valor de <strong>50</strong>.</li>
+<li>$\text{Score}_0$: Puntaje (score) que se asigna a una probabilidad de incumplimiento base específica (a partir de unas odds base). Con un valor de <strong>600</strong> estándar.</li>
+</ul>
+<p>Con todo esto, es posible realizar el cálculo a partir de las probabilidades retornadas por el modelo. Para esto simplemente se define una función en Python que realice el cálculo según las probabilidades, y con dicha función aplicada a la probabilidad de corte del modelo, se encuentra el score crediticio de corte, el cual al calcularlo se obtiene un valor de:</p>
+<p><strong>$$\text{Scorecard de Corte}\approx \text{346.257 puntos}$$</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Veamos entonces, como se ve el histograma normalizado de scores crediticios de los datos de test, obtenido por medio de las probabilidades calculadas con el modelo, indicando el punto de corte, y los lados de aprobación y rechazo. Entendiendo pues, que a mayor score crediticio, más susceptible es el usuario de obtener su crédito solicitado.</p>
+<center>
+<img alt="No description has been provided for this image" src="images_report/histograma_scorecard.png"/>
+<i>Fig. 15 Scorecard de Corte<i>
+</i></i></center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Podemos ver en el histograma que la línea de corte del modelo muestra un cambio en la distribución de los scores inmediato, esto apoya gráficamente el punto de corte del puntaje crediticio. Aunque, es importante entender que por el trade-off del modelo para mejorar la detección de malos pagadores, hay algunos buenos pagadores que pueden estar en la región de susceptible a rechazo de crédito, reflejando así el problema real en el mundo del crédito, donde los malos pagadores afectan las posibilidades de acceso de crédito de personas que serían buenos pagadores.</p>
+<p>Con todo esto claro, pasemos conocer a detalle el despliegue e implementación del modelo crediticio en la aplicación web.</p>
+<p><strong>NOTA:</strong> El listado de aprendizajes de toda esta sección de modelamiento será sintetizado al final en las conclusiones del reporte</p>
+<br/>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="aplicacion-web">Aplicación web<a class="anchor-link" href="#Aplicacion-web">¶</a></h1><p>Acceso a la aplicación: <a href="https://web-production-717668.up.railway.app/">https://web-production-717668.up.railway.app/</a>
+Link alternativo: <a href="https://credit-risk-bc78.onrender.com/">https://credit-risk-bc78.onrender.com/</a></p>
+<hr/>
+<h2 id="Arquitectura-General">Arquitectura General<a class="anchor-link" href="#Arquitectura-General">¶</a></h2><p>Se implementó una arquitectura monolítica sencilla utilizando <strong>Flask</strong>, un microframework de Python ideal para aplicaciones ligeras. El flujo de procesamiento de datos sigue esta secuencia:</p>
+<ol>
+<li><strong>Entrada</strong>: Formulario en HTML</li>
+<li><strong>Validación</strong>: Lado cliente (frontend) y servidor (backend)</li>
+<li><strong>Preprocesamiento</strong>: Codificación + escalado manual</li>
+<li><strong>Predicción</strong>: Utilizando ONNX Runtime</li>
+<li><strong>Respuesta</strong>: Score (Aprobado / Rechazado)</li>
+</ol>
+<hr/>
+<h2 id="Tecnolog%C3%ADas-Utilizadas">Tecnologías Utilizadas<a class="anchor-link" href="#Tecnolog%C3%ADas-Utilizadas">¶</a></h2><p>La Tabla 1 presenta las tecnologías clave utilizadas en la implementación del sistema, junto con sus versiones y propósitos.</p>
+<p><strong>Tabla 1. Tecnologías utilizadas en el sistema</strong></p>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Tecnología</th>
+<th>Versión</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backend</td>
+<td>Flask</td>
+<td>2.3.3</td>
+<td>Microframework web</td>
+</tr>
+<tr>
+<td>ML Runtime</td>
+<td>ONNX Runtime</td>
+<td>1.16.3</td>
+<td>Inferencia optimizada y ligera</td>
+</tr>
+<tr>
+<td>Computación</td>
+<td>NumPy</td>
+<td>1.24.3</td>
+<td>Operaciones numéricas</td>
+</tr>
+<tr>
+<td>Servidor</td>
+<td>Gunicorn</td>
+<td>21.2.0</td>
+<td>Servidor WSGI para producción</td>
+</tr>
+<tr>
+<td>Hosting</td>
+<td>Render</td>
+<td>-</td>
+<td>Plataforma cloud gratuita</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="Optimizaci%C3%B3n-de-Recursos">Optimización de Recursos<a class="anchor-link" href="#Optimizaci%C3%B3n-de-Recursos">¶</a></h2><p>Debido a las limitaciones del hosting gratuito provisto por Render, fue necesario optimizar el uso de memoria. Para ello se reemplazaron y ajustaron tecnologías, como se resume en la Tabla 2.</p>
+<p><strong>Tabla 2. Tecnologías reemplazadas u optimizadas por limitaciones de entorno</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tecnología</th>
+<th>Uso Original</th>
+<th>Estado Actual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TensorFlow / Keras</td>
+<td>Entrenamiento del modelo</td>
+<td>Eliminado</td>
+</tr>
+<tr>
+<td>Scikit-learn</td>
+<td>Preprocesamiento</td>
+<td>Reemplazado / Optimizado</td>
+</tr>
+<tr>
+<td>Joblib</td>
+<td>Serialización</td>
+<td>Reemplazado por JSON</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Resultados-de-la-Optimizaci%C3%B3n">Resultados de la Optimización<a class="anchor-link" href="#Resultados-de-la-Optimizaci%C3%B3n">¶</a></h2><p>Gracias a estos cambios:</p>
+<ul>
+<li>Se redujo el tamaño del proyecto en <strong>más del 85%</strong>.</li>
+<li>Se eliminó la necesidad de cargar TensorFlow en producción.</li>
+<li>El escalado se realizó manualmente sin necesidad de <code>scikit-learn</code>, lo que permitió una carga instantánea.</li>
+<li>La inferencia es ahora más eficiente gracias a ONNX Runtime.</li>
+</ul>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Conclusiones">Conclusiones<a class="anchor-link" href="#Conclusiones">¶</a></h1><ul>
+<li><p>La preparación de los datos es un paso vital para entrenar modelos, es importante realizar siempre esta tarea de manera muy consciente y analítica, ya que hacerlo mal implica perder tiempo y procesamiento computacional, pues las malas métricas terminan saliendo a la luz, y exigen retroceder en el flujo de los datos para realizar las correciones pertinentes.</p>
+</li>
+<li><p>Hacer análisis descriptivos e hipótesis es muy importante, pues a raíz de esto se pueden obtener indicios de las variables con mayor peso e importancia en el problema particular, lo cual no solo enriquece previamente al modelo, sino también en el análisis consciente postmodelo.</p>
+</li>
+<li><p>El diseño de arquitecturas y uso de técnicas para entrenar redes neuronales es todo un mundo a parte en el <em>machine learning</em>, no solo es importante tener unos fundamentos claros y conceptuales de las redes neuronales artificiales, también la experticia en este campo puede hacer la diferencia entre gastar mucho tiempo, cómputo y por tanto dinero, para terminar teniendo modelos subóptimos; a lograr obtener modelos altamente eficientes con menos inversión.</p>
+</li>
+<li><p>Las métricas son el alma para evaluar modelos, quedarse con una o muy pocas métricas de evaluación es terrible, ya que en problemas donde hay desbalance o que es necesario un trade-off, usar solo métricas como el <strong>accuracy</strong> terminarán maquillando como buen modelo, a uno que realmente no lo es para el problema en particular.</p>
+</li>
+<li><p>Lograr establacer el puente entre las salidas abstractas de un modelo y la realidad económica, política y social; es clave para poder evaluar de forma realista y explicativa la solución. La comunicación y venta de soluciones es una habilidad fundamental para cualquier persona que se desempeñe como <em>problem solver</em>.</p>
+</li>
+<li><p>Este proyecto demuestra que es posible construir una aplicación de <em>machine learning</em> funcional, rápida y liviana con herramientas simples y eficientes, incluso en un entorno limitado como Render. El uso estratégico de librerías ligeras y la eliminación de dependencias pesadas permitieron cumplir los objetivos de rendimiento y accesibilidad.</p>
+</li>
+<li><p>En el proceso de entregar soluciones es importante la conexión y estratificación de tareas en el equipo de desarrollo, pues siempre hay que tener en mente que donde culmina el aporte indivdual no es el final del trabajo completo, sino el inicio de otra etapa importante que es clave para cumplir con los objetivos.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="bibliografia">Bibliografía<a class="anchor-link" href="#Bibliografia">¶</a></h1><ul>
+<li><p>Thomas, L. C., Edelman, D. B., &amp; Crook, J. N. (2002). Credit scoring and its applications. Society for Industrial and Applied Mathematics.</p>
+</li>
+<li><p>Ullah, I., &amp; Petrosino, A. (2016).<em>About Pyramid Structure in Convolutional Neural Networks</em>. arXiv. <a href="https://arxiv.org/abs/1608.04064">https://arxiv.org/abs/1608.04064</a></p>
+</li>
+<li><p>Di Nardo, E., Petrosino, A., &amp; Ullah, I. (2018). <em>EmoP3D: A Brain Like Pyramidal Deep Neural Network for Emotion Recognition</em>. En L. Leal-Taixé &amp; S. Roth (Eds.), <em>Computer Vision – ECCV 2018 Workshops</em> (pp. 607–616). Springer. <a href="https://doi.org/10.1007/978-3-030-11015-4_46">https://doi.org/10.1007/978-3-030-11015-4_46</a></p>
+</li>
+<li><p>Chollet, F., et al. (s. f.). ModelCheckpoint. En Keras Documentation</p>
+</li>
+<li><p>Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., &amp; Salakhutdinov, R. (2014). <em>Dropout: A Simple Way to Prevent Neural Networks from Overfitting</em>. <em>Journal of Machine Learning Research</em>, 15, 1929–1958.</p>
+</li>
+<li><p>Ioffe, S., &amp; Szegedy, C. (2015). <em>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</em>. En <em>Proceedings of the 32nd International Conference on Machine Learning</em> (pp. 448–456). <a href="https://proceedings.mlr.press/v37/ioffe15.html">https://proceedings.mlr.press/v37/ioffe15.html</a></p>
+</li>
+<li><p>Xu, B., Wang, N., Chen, T., &amp; Li, M. (2015). <em>Empirical Evaluation of Rectified Activations in Convolutional Network</em>. arXiv. <a href="https://arxiv.org/abs/1505.00853">https://arxiv.org/abs/1505.00853</a></p>
+</li>
+<li><p>Prechelt, L. (1998). <em>Early Stopping — But When?</em>. En G. Dorffner, H. Bischof, &amp; K. Hornik (Eds.), <em>Neural Networks: Tricks of the Trade</em> (pp. 55–69). Springer. <a href="https://link.springer.com/chapter/10.1007/3-540-49430-8_3">https://link.springer.com/chapter/10.1007/3-540-49430-8_3</a></p>
+</li>
+<li><p>TensorFlow. (2025). <em>ModelCheckpoint</em>. <a href="https://keras.io/api/callbacks/model_checkpoint/">https://keras.io/api/callbacks/model_checkpoint/</a></p>
+</li>
+<li><p>Calani, M. (2019). <em>Can Regulation on Loan-Loss-Provisions for Credit Risk Affect the Mortgage Market? Evidence from Administrative Data in Chile</em>. <em>BIS Working Papers No. 780</em>. <a href="https://www.bis.org/publ/work780.htm">https://www.bis.org/publ/work780.htm</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
